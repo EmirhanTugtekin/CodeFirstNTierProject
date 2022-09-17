@@ -1,0 +1,12 @@
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\DTO_Layer\bin\Debug\DTO_Layer.dll.config
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\DTO_Layer\bin\Debug\DTO_Layer.dll
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\DTO_Layer\bin\Debug\DTO_Layer.pdb
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\DTO_Layer\bin\Debug\EntityFramework.dll
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\DTO_Layer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\DTO_Layer\bin\Debug\EntityFramework.xml
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\DTO_Layer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\DTO_Layer\obj\Debug\DTO_Layer.csproj.AssemblyReference.cache
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\DTO_Layer\obj\Debug\DTO_Layer.csproj.CoreCompileInputs.cache
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\DTO_Layer\obj\Debug\DTO_Layer.csproj.CopyComplete
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\DTO_Layer\obj\Debug\DTO_Layer.dll
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\DTO_Layer\obj\Debug\DTO_Layer.pdb

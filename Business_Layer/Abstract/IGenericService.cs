@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business_Layer.Abstract
+namespace Business_Layer
 {
     public interface IGenericService<T> where T : class
     {

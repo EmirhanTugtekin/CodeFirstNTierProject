@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace DAL_Layer
 {
-    public class EfProductDal : GenericRepo<Product>, IProductDal
+    public interface IAdminDal:IGenericDal<Admin>
     {
-        
+
     }
 }

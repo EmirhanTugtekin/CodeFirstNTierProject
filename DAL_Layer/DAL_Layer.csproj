@@ -40,9 +40,30 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,14 +72,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAdminDal.cs" />
     <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Abstract\ICustomerDal.cs" />
     <Compile Include="Abstract\IGenericDal.cs" />
     <Compile Include="Abstract\IProductDal.cs" />
     <Compile Include="Concrete\Context.cs" />
-    <Compile Include="EntityFramework\EfCategoryDal.cs" />
-    <Compile Include="EntityFramework\EfCustomerDal.cs" />
-    <Compile Include="EntityFramework\EfProductDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfAdminDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfCustomerDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfProductDal.cs" />
     <Compile Include="Migrations\202209131738401_mig_add_categoryStatus.cs" />
     <Compile Include="Migrations\202209131738401_mig_add_categoryStatus.designer.cs">
       <DependentUpon>202209131738401_mig_add_categoryStatus.cs</DependentUpon>
@@ -70,6 +93,18 @@
     <Compile Include="Migrations\202209131750100_mig_add_relation_CategoryId_vs_CategoryID.cs" />
     <Compile Include="Migrations\202209131750100_mig_add_relation_CategoryId_vs_CategoryID.designer.cs">
       <DependentUpon>202209131750100_mig_add_relation_CategoryId_vs_CategoryID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202209200622033_Login_Register.cs" />
+    <Compile Include="Migrations\202209200622033_Login_Register.designer.cs">
+      <DependentUpon>202209200622033_Login_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202209200623190_admin_dbset.cs" />
+    <Compile Include="Migrations\202209200623190_admin_dbset.designer.cs">
+      <DependentUpon>202209200623190_admin_dbset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202209200739384_role.cs" />
+    <Compile Include="Migrations\202209200739384_role.designer.cs">
+      <DependentUpon>202209200739384_role.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +124,15 @@
     <EmbeddedResource Include="Migrations\202209131750100_mig_add_relation_CategoryId_vs_CategoryID.resx">
       <DependentUpon>202209131750100_mig_add_relation_CategoryId_vs_CategoryID.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202209200622033_Login_Register.resx">
+      <DependentUpon>202209200622033_Login_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202209200623190_admin_dbset.resx">
+      <DependentUpon>202209200623190_admin_dbset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202209200739384_role.resx">
+      <DependentUpon>202209200739384_role.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entity_Layer\Entity_Layer.csproj">
@@ -96,6 +140,7 @@
       <Name>Entity_Layer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

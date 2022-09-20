@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 3 | Project Add</title>
+    <title>AdminLTE 3</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -51,91 +51,32 @@
                         <!-- Add icons to the links using the .nav-icon class
                         with font-awesome or any other icon font library -->
                         <li class="nav-item has-treeview">
-                            <a href="/Hakkimda/Index/" class="nav-link">
+                            <a href="/Category/Index/" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
-                                    Hakkımda
+                                    Kategoriler
                                 </p>
                             </a>
                         </li>
+                        @if (User.IsInRole("A"))
+                        {
                         <li class="nav-item">
-                            <a href="/Egitim/Index/" class="nav-link">
+                            <a href="/Customer/Index/" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
-                                    Eğitimlerim
+                                    Müşteriler
                                 </p>
                             </a>
                         </li>
+                        }
                         <li class="nav-item has-treeview">
-                            <a href="/Deneyim/Index/" class="nav-link">
+                            <a href="/Product/Index/" class="nav-link">
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
-                                    Deneyimlerim
+                                    Ürünler
                                 </p>
                             </a>
 
-
-
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="/Hobi/Index/" class="nav-link">
-                                <i class="nav-icon fas fa-chart-pie"></i>
-                                <p>
-                                    Hobilerim
-                                </p>
-                            </a>
-
-
-
-                        </li>
-                        <li class="nav-item">
-                            <a href="/Yetenek/Index/" class="nav-link">
-                                <i class="nav-icon far fa-calendar-alt"></i>
-                                <p>
-                                    Yeteneklerim
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/Sertifika/Index/" class="nav-link">
-                                <i class="nav-icon far fa-image"></i>
-                                <p>
-                                    Sertifikalarım
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/iletisim/Index/" class="nav-link">
-                                <i class="nav-icon far fa-image"></i>
-                                <p>
-                                    İletişim
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/SosyalMedya/Index/" class="nav-link">
-                                <i class="nav-icon fas fa-code"></i>
-                                <p>
-                                    Sosyal Medya
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/Admin/Index/" class="nav-link">
-                                <i class="nav-icon fas fa-pen"></i>
-                                <p>
-                                    Ayarlar
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/Login/LogOut/" class="nav-link">
-                                <i class="nav-icon fas fa-sign"></i>
-                                <p>
-                                    Çıkış
-                                </p>
-                            </a>
-                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

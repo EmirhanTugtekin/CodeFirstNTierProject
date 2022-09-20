@@ -1,0 +1,60 @@
+﻿@model Entity_Layer.Customer
+
+@{
+    ViewData["Title"] = "CustomerRegister";
+
+}
+
+<br />
+
+
+
+<section class="main-content-w3layouts-agileits">
+    <div class="container">
+        <h2>Müşteri Kayıt Olma Sayfası</h2>
+        <h3 class="tittle">Kayıt ol</h3>
+        <div class="inner-sec">
+            <div class="login p-5 bg-light mx-auto mw-100">
+                @using (Html.BeginForm("CustomerRegister", "Register", FormMethod.Post))
+                {
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom01">Ad:</label>
+                            @Html.TextBoxFor(x => x.CustomerName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.CustomerName, "", new { @class = "text-danger" })
+                            @*<input type="text" class="form-control" id="validationDefault01" name="UserName" placeholder="" required="">*@
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom02">Soyad:</label>
+                            @Html.TextBoxFor(x => x.CustomerSurname, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.CustomerSurname, "", new { @class = "text-danger" })
+                            @*<input type="text" class="form-control" id="validationDefault02" name="UserSurname" placeholder="" required="">*@
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom02">Şehir:</label>
+                            @Html.TextBoxFor(x => x.CustomerCity, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.CustomerCity, "", new { @class = "text-danger" })
+                            @*<input type="text" class="form-control" id="validationDefault02" name="UserMail" placeholder="" required="">*@
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword1 mb-2">Password</label>
+                            @Html.TextBoxFor(x => x.CustomerPassword, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.CustomerPassword, "", new { @class = "text-danger" })
+                            @*<input type="password" class="form-control" id="password1" name="UserPassword" placeholder="" required="">*@
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword2 mb-2">Confirm Password</label>
+                            @Html.TextBoxFor(x => x.CustomerPassword, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.CustomerPassword, "", new { @class = "text-danger" })
+                            @*<input type="password" class="form-control" id="password2" name="UserPassword" placeholder="" required="">*@
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit mb-4">Kayıt ol</button>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>

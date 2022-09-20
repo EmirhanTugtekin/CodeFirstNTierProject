@@ -90,3 +90,11 @@ D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Pr
 D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\UI_Layer\obj\Debug\UI_Layer.csproj.CopyComplete
 D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\UI_Layer\obj\Debug\UI_Layer.dll
 D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\UI_Layer\obj\Debug\UI_Layer.pdb
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\UI_Layer\bin\FluentValidation.dll
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\UI_Layer\bin\System.Threading.Tasks.Extensions.dll
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\UI_Layer\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\UI_Layer\bin\FluentValidation.xml
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\UI_Layer\bin\System.Threading.Tasks.Extensions.xml
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\UI_Layer\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\UI_Layer\bin\Ninject.dll
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\N-Tier_CodeFirst_MVC_Project\UI_Layer\bin\Ninject.xml

@@ -14,5 +14,9 @@ namespace Entity_Layer
         public string CustomerName { get; set; }
         public string CustomerSurname { get; set; }
         public string CustomerCity { get; set; }
+        public string CustomerPassword { get; set; }
+        public string CustomerRole { get; set; }
+
+
     }
 }

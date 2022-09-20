@@ -1,0 +1,25 @@
+﻿@model Entity_Layer.Customer
+
+@{
+    ViewBag.Title = "EditCustomer";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<div class="container">
+    <h2>Müşteri Güncelleme Sayfası</h2>
+
+    <form method="post">
+        @Html.HiddenFor(x => x.CustomerID, new { @class = "form-control" })
+
+        <label>Müşteri Adı</label>
+        @Html.TextBoxFor(x => x.CustomerName, new { @class = "form-control" })
+
+        <label>Müşteri Soyadı</label>
+        @Html.TextBoxFor(x => x.CustomerSurname, new { @class = "form-control" })
+
+        <label>Müşteri Şehri</label>
+        @Html.TextBoxFor(x => x.CustomerCity, new { @class = "form-control" })
+
+        <button class="btn btn-outline-info">Verileri Güncelle</button>
+    </form>
+</div>
+

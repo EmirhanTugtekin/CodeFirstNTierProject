@@ -1,0 +1,27 @@
+﻿@model Entity_Layer.Product
+@{
+    ViewBag.Title = "EditProduct";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="container">
+    <h2>Ürün Güncelleme Sayfası</h2>
+
+    <form method="post">
+        @Html.HiddenFor(x => x.ProductID, new { @class = "form-control" })
+
+        <label>Ürün Adı</label>
+        @Html.TextBoxFor(x => x.ProductName, new { @class = "form-control" })
+
+        <label>Ürün Stoğu</label>
+        @Html.TextBoxFor(x => x.ProductStock, new { @class = "form-control" })
+
+        <label>Ürün Fiyatı</label>
+        @Html.TextBoxFor(x => x.ProductPrice, new { @class = "form-control" })
+
+        @Html.HiddenFor(x => x.CategoryID, new { @class = "form-control" })
+
+        <button class="btn btn-outline-info">Verileri Güncelle</button>
+    </form>
+</div>
+
